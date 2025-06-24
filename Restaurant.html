@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Bella Italia - Authentische italienische Küche</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+
+
+  <!-- Eigene Styles -->
+<link rel="stylesheet" href="style.css">
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #f6f1f1;
+    }
+    .dark-mode .hero-section,
+    .dark-mode .card,
+    .dark-mode .table,
+    .dark-mode .form-control,
+    .dark-mode textarea {
+      background-color: #1e1e1e;
+      color: #f9f8f8;
+    }
+    .dark-mode .form-control::placeholder,
+    .dark-mode textarea::placeholder {
+      color: #fffdfd;
+    }
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200') center/cover;
+      color: rgb(248, 244, 244);
+      min-height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Umschalt-Schalter für Dark Mode -->
+<div class="position-fixed top-0 end-0 m-3" style="z-index: 1055;">
+  <button class="btn btn-sm btn-outline-light bg-dark" onclick="document.body.classList.toggle('dark-mode')">
+    <i class="bi bi-moon-stars"></i> Dark Mode
+  </button>
+</div>
+
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">
+        <i class="bi bi-shop me-2"></i>Restaurant Bella Italia
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+         <li class="nav-item">
+  <a class="nav-link" href="Überuns.html">Über uns</a>
+</li>
+
+          <li class="nav-item"><a class="nav-link" href="#menu">Speisekarte</a></li>
+          <li class="nav-item"><a class="nav-link" href="#hours">Öffnungszeiten</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div style="height: 56px;"></div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Benvenuti bei Bella Italia</h1>
+      <p class="lead">Genieße authentische italienische Spezialitäten in herzlicher Atmosphäre.</p>
+      <a href="#menu" class="btn btn-light btn-lg mt-3">
+        <i class="bi bi-book me-2"></i>Zur Speisekarte
+      </a>
+    </div>
+  </section>
+
+  <!-- SPEISEKARTE + BEWERTUNGEN SECTION -->
+  <section id="menu" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Unsere Spezialitäten</h2>
+      <!-- Bewertungen -->
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="card-text">"Beste Pizza der Stadt!"</p>
+              <footer class="text-muted">- Max M.</footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+              </div>
+              <p class="card-text">"Sehr freundlicher Service und tolles Ambiente."</p>
+              <footer class="text-muted">- Laura S.</footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="text-warning mb-3">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+              </div>
+              <p class="card-text">"Immer wieder ein Genuss!"</p>
+              <footer class="text-muted">- Jens K.</footer>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-info text-center mb-5">
+        <i class="bi bi-info-circle me-2"></i>
+        Alle Preise in Euro. Allergene-Information auf Anfrage.
+      </div>
+    </div>
+  </section>
+<!-- SPEISEKARTE Gerichte -->
+<div class="row g-4">
+  <!-- Pizza -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+      <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">🍕 Pizza</h5>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Margherita</h6>
+        <p class="card-text text-muted small">Tomaten, Mozzarella, Basilikum</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fw-bold">8,50 €</span>
+          <span class="badge bg-success">Vegetarisch</span>
+        </div>
+        <hr>
+        <h6 class="card-title">Salami</h6>
+        <p class="card-text text-muted small">Tomaten, Mozzarella, Salami</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fw-bold">9,50 €</span>
+          <span class="badge bg-warning text-dark">Bestseller</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pasta -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+      <div class="card-header bg-success text-white">
+        <h5 class="mb-0">🍝 Pasta</h5>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Spaghetti Carbonara</h6>
+        <p class="card-text text-muted small">Speck, Ei, Parmesan</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fw-bold">11,00 €</span>
+          <span class="badge bg-warning text-dark">Bestseller</span>
+        </div>
+        <hr>
+        <h6 class="card-title">Penne Arrabbiata</h6>
+        <p class="card-text text-muted small">Scharfe Tomatensauce</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fw-bold">9,00 €</span>
+          <span class="badge bg-danger">Scharf</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Desserts -->
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100">
+      <div class="card-header bg-warning text-dark">
+        <h5 class="mb-0">🍰 Desserts</h5>
+      </div>
+      <div class="card-body">
+        <h6 class="card-title">Tiramisu</h6>
+        <p class="card-text text-muted small">Hausgemacht nach Originalrezept</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fw-bold">6,50 €</span>
+          <span class="badge bg-info text-dark">Hausgemacht</span>
+        </div>
+        <hr>
+        <h6 class="card-title">Panna Cotta</h6>
+        <p class="card-text text-muted small">Mit Beerensauce</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <span class="fw-bold">5,50 €</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- ÖFFNUNGSZEITEN SECTION -->
+  <section id="hours" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Öffnungszeiten</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6">
+          <table class="table table-striped table-hover">
+            <thead class="table-dark">
+              <tr><th>Tag</th><th class="text-center">Mittagstisch</th><th class="text-center">Abends</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Montag - Freitag</td><td class="text-center">11:30 - 14:30</td><td class="text-center">17:30 - 22:00</td></tr>
+              <tr><td>Samstag</td><td class="text-center">12:00 - 15:00</td><td class="text-center">17:00 - 23:00</td></tr>
+              <tr><td>Sonntag</td><td class="text-center">12:00 - 15:00</td><td class="text-center">17:00 - 21:00</td></tr>
+              <tr class="table-danger"><td>Dienstag</td><td class="text-center" colspan="2"><strong>Ruhetag</strong></td></tr>
+            </tbody>
+          </table>
+          <div class="alert alert-warning mt-4">
+            <i class="bi bi-exclamation-triangle me-2"></i>
+            <strong>Hinweis:</strong> An Feiertagen gelten besondere Öffnungszeiten.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT SECTION -->
+  <section id="contact" class="py-5 bg-dark">
+    <div class="container">
+      <h2 class="text-center text-white mb-5">Kontaktiere uns</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-white">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Dein Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-white">E-Mail</label>
+              <input type="email" class="form-control" id="email" placeholder="deine@email.de">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-white">Nachricht</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Was möchtest du uns sagen?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <i class="bi bi-envelope-fill me-2"></i>Absenden
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

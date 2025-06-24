@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über uns – Bella Italia</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body.dark-mode {
+      background-color: #121212;
+      color: #f8f9fa;
+    }
+    .dark-mode .hero-header,
+    .dark-mode .card,
+    .dark-mode .form-control,
+    .dark-mode textarea {
+      background-color: #1e1e1e;
+      color: #f8f9fa;
+    }
+    .dark-mode .form-control::placeholder,
+    .dark-mode textarea::placeholder {
+      color: #aaa;
+    }
+
+    .hero-header {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url('https://usercontent.one/wp/www.glamouraffair.com/wp-content/uploads/2017/03/Cover-Bellezze-dItalia-1-cover.jpg?media=1662460922') center/cover;
+      color: white;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dark Mode Umschalter -->
+  <div class="position-fixed top-0 end-0 m-3">
+    <button class="btn btn-sm btn-outline-light bg-dark" onclick="document.body.classList.toggle('dark-mode')">
+      <i class="bi bi-moon-stars"></i> Dark Mode
+    </button>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="Restaurant.html">
+        <i class="bi bi-shop me-2"></i>Bella Italia
+      </a>
+    </div>
+  </nav>
+
+  <div style="height: 56px;"></div>
+
+  <!-- HERO HEADER -->
+  <section class="hero-header">
+    <div class="container">
+      <h1 class="display-4 fw-bold">La Famiglia – Unsere Geschichte</h1>
+      <p class="lead">Mit Leidenschaft, Tradition und einem Hauch Italien seit 1998.</p>
+    </div>
+  </section>
+
+  <!-- ÜBER UNS INHALT -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Wer wir sind</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <p class="lead">Bella Italia ist mehr als ein Restaurant – es ist ein Stück Italien mitten in Deutschland. Seit über zwei Jahrzehnten servieren wir mit Hingabe original italienische Küche, inspiriert von den Rezepten unserer Nonna und der Wärme südländischer Gastfreundschaft.</p>
+          <p>Unser Familienbetrieb wurde 1998 von Luigi und Maria gegründet, die ihre Liebe zu Pasta, Pizza und guten Gesprächen mitgebracht haben. Heute wird Bella Italia in zweiter Generation geführt – mit frischen Ideen, aber derselben Leidenschaft.</p>
+          <p>Wir legen großen Wert auf Qualität, Regionalität und die Kunst der einfachen, ehrlichen Küche. Ob romantisches Dinner, Familienfest oder ein spontaner Besuch – bei uns sollst du dich fühlen wie in einer Trattoria in Neapel oder Florenz.</p>
+          <p class="fw-bold">Bella Italia – weil Essen verbindet.</p>
+          <a href="Restaurant.html" class="btn btn-outline-secondary mt-4">
+            <i class="bi bi-arrow-left me-1"></i> Zurück zur Startseite
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #0b58a4;
+}
+.dark-mode .hero-section,
+.dark-mode .card,
+.dark-mode .table,
+.dark-mode .form-control,
+.dark-mode textarea {
+  background-color: #1e1e1e;
+  color: #595c5f;
+}
+.dark-mode .form-control::placeholder,
+.dark-mode textarea::placeholder {
+  color: #413e3e;
+}
+.dark-mode .bg-light {
+  background-color: #4f4e4e !important;
+  color: #151616 !important;
+}
+.dark-mode .bg-light * {
+  color: #f8f9fa !important;
+}
